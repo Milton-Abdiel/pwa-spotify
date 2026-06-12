@@ -1,0 +1,123 @@
+body{
+    background:#121212;
+    color:white;
+    text-align:center;
+    font-family:Arial,sans-serif;
+    margin:0;
+}
+
+h1{
+    color:#1DB954;
+}
+
+.coverPlaylist{
+    margin-top:20px;
+}
+
+.coverPlaylist img{
+    width:250px;
+    height:250px;
+    border-radius:20px;
+    object-fit:cover;
+}
+
+.coverPlaylist p{
+    color:#b3b3b3;
+}
+
+.playlist{
+    width:600px;
+    margin:auto;
+    margin-top:25px;
+}
+
+.playlist ul{
+    list-style:none;
+    padding:0;
+}
+
+.playlist li{
+    background:#1e1e1e;
+    margin:8px;
+    padding:12px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.playlist li:hover{
+    background:#1DB954;
+}
+
+.activa{
+    background:#1DB954 !important;
+    font-weight:bold;
+}
+
+.reproduciendo{
+    margin-top:40px;
+}
+
+.player{
+    margin-top:20px;
+}
+
+.player img{
+    width:300px;
+    height:300px;
+    border-radius:15px;
+    object-fit:cover;
+}
+
+.girando{
+    animation:girar 8s linear infinite;
+}
+
+@keyframes girar{
+
+from{
+transform:rotate(0deg);
+}
+
+to{
+transform:rotate(360deg);
+}
+
+}
+
+button{
+    padding:10px 18px;
+    margin:8px;
+    border:none;
+    border-radius:10px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+#artista{
+    color:#b3b3b3;
+}
+
+#progreso{
+    width:350px;
+}
+
+.volumen{
+    margin-top:15px;
+}
+
+#volumen{
+    width:220px;
+}
+
+footer{
+    margin-top:50px;
+    border-top:1px solid #333;
+    padding:20px;
+    color:#b3b3b3;
+}
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mini Spotify</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+
+<h1>🎵 Mini Spotify</h1>
+
+<div class="coverPlaylist">
+
+<img src="playlist.jpg" alt="Playlist">
+
+<h2>Playlist creada por Milton Abdiel</h2>
+
+<p>5 canciones • Música favorita</p>
+
+</div>
+
+<div class="playlist">
+
+<ul id="listaCanciones">
+
+<li onclick="seleccionarCancion(0)">
+Luces de Colores - Omar Courtz
+</li>
+
+<li onclick="seleccionarCancion(1)">
+Baila Baila Baila Remix - Ozuna
+</li>
+
+<li onclick="seleccionarCancion(2)">
+Imitadora - Romeo Santos
+</li>
+
+<li onclick="seleccionarCancion(3)">
+El Farsante - Ozuna
+</li>
+
+<li onclick="seleccionarCancion(4)">
+Pero No Te Enamores - Fuerza Regida
+</li>
+
+</ul>
+
+</div>
+
+<div class="reproduciendo">
+
+<h3>🎧 REPRODUCIENDO AHORA</h3>
+
+</div>
+
+<div class="player">
+
+<img id="portada" src="portada1.jpg">
+
+<h2 id="titulo"></h2>
+
+<h3 id="artista"></h3>
+
+<audio id="audio"></audio>
+
+<div class="botones">
+
+<button onclick="anterior()">⏮</button>
+
+<button onclick="playPause()">▶️ / ⏸</button>
+
+<button onclick="siguiente()">⏭</button>
+
+<button onclick="aleatorio()">🔀</button>
+
+</div>
+
+<input type="range" id="progreso" value="0" min="0" max="100">
+
+<p id="tiempo">0:00 / 0:00</p>
+
+<div class="volumen">
+
+🔊
+
+<input type="range"
+id="volumen"
+min="0"
+max="1"
+step="0.1"
+value="1">
+
+</div>
+
+</div>
+
+<footer>
+
+<p>Creado por: Milton Abdiel Pérez Gómez</p>
+
+<p>Instituto Nacional de Osicala (INO)</p>
+
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
